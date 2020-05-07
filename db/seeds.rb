@@ -7,6 +7,11 @@ topStories = HTTParty.get(topStoriesURL).parsed_response
 for i in 0..10 
   storyURL = "https://hacker-news.firebaseio.com/v0/item/#{topStories[i]}.json"
   storyJSON = HTTParty.get(storyURL).parsed_response
-  Post.create(title: storyJSON["title"], link: storyJSON["title"], upvotes: 0)
+  Post.create(
+    title: storyJSON["title"], 
+    link: storyJSON["title"], 
+    upvotes: 0,
+    date: Time.at(json["time"]).strftime("%d/%m/%Y")
+  )
 end
 
