@@ -9,9 +9,9 @@ for i in 0..10
   storyJSON = HTTParty.get(storyURL).parsed_response
   Post.create(
     title: storyJSON["title"], 
-    link: storyJSON["title"], 
+    link: storyJSON["url"], 
     upvotes: 0,
-    date_posted: Time.at(json["time"]).strftime("%d/%m/%Y")
+    date_posted: Time.at(storyJSON["time"]).strftime("%d/%m/%Y")
   )
 end
 
