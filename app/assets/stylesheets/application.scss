@@ -7,6 +7,10 @@
     color: #3282B8;
     font-family: "Montserrat";
  }
+ #title {
+  background-color: #ff4c68;
+  color:#3282B8;
+}
 
  .container-fluid {
   padding: 3% 15%;
@@ -27,13 +31,13 @@
 
 .nav-item {
   padding: 0 18px;
-  color: #0f4c75;
+  color: #3282B8;
 }
 
 .nav-link {
   font-size: 1.6rem;
   font-family: "Montserrat-Light";
-  color: #0f4c75;
+  color: #3282B8;
 }
 
 // Body 
@@ -54,6 +58,6 @@
       font-size:3.5rem;
  }
 
- li {
-   text-align: center;
- }
+//  li {
+//    text-align: center;
+//  }
