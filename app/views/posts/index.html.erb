@@ -1,0 +1,13 @@
+<h1>HackerNews 2.0</h1>
+
+<ul>
+  <% for post in @posts %>
+    <li class = "tomato">
+      <%= post.title%>
+      <%= post.link%>
+      <%= post.date_posted%>
+      <%= post.upvotes%>   
+    </li>
+    <br>
+  <% end %>
+</ul>

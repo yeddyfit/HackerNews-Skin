@@ -11,7 +11,7 @@ for i in 0..10
     title: storyJSON["title"], 
     link: storyJSON["title"], 
     upvotes: 0,
-    date: Time.at(json["time"]).strftime("%d/%m/%Y")
+    date_posted: Time.at(json["time"]).strftime("%d/%m/%Y")
   )
 end
 
