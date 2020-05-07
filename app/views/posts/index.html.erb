@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -31,7 +32,7 @@
 </head>
 
 <h1 class="tomato">HackerNews 2.0</h1>
-
+<h1>HackerNews 2.0</h1>
 
 <ul>
   <% for post in @posts %>
@@ -39,7 +40,6 @@
       <li class = "links"> <%= post.title%> </li>
       <li class="links"><a target="_blank" href="<%= post.link %>">  <%= post.link%> </a> </li> 
       <li class="links"><%= post.date_posted%></li> 
-      <%# <button>comments</button> %>
       <%= link_to "comments", post_path(post.id) %>
       <%# <%= post.upvotes%>  
     </div>
