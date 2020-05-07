@@ -65,6 +65,6 @@ gem "devise", "~> 4.7"
 
 gem "httparty", "~> 0.18.0"
 
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
