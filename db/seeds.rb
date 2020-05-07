@@ -1,5 +1,4 @@
 require 'httparty'
-
 # returns and array of top story ids
 topStoriesURL = "https://hacker-news.firebaseio.com/v0/topstories.json?"
 topStories = HTTParty.get(topStoriesURL).parsed_response
