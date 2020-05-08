@@ -1,6 +1,7 @@
 <h1> <%= @post.title%></h1>
-
 <%= link_to "home", root_path %>
+<a target="_blank" href="<%= @post.link %>">  <%= @post.link%> </a>
+<br>
 
 
 <%= form_with(model: @comment, local: true) do |form| %>
