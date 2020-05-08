@@ -36,13 +36,15 @@
         <h1>Hacker News 2.0</h1>
       </div>
 
+      <div class="login_container">
       <div class="login"> 
     <% if user_signed_in? %>
         <%= link_to "logout", destroy_user_session_path, method: :delete %>
     <% else %>
         <%= link_to "login", new_user_session_path %>
     <% end %>
-  </div>
+    </div>
+    </div>
 
       <%# <ul class="navigation">
       <a><li>Something 1</li><a>
@@ -68,12 +70,4 @@
 
 
   </section>
-
-  <div class="login"> 
-    <% if user_signed_in? %>
-        <%= link_to "logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-        <%= link_to "login", new_user_session_path %>
-    <% end %>
-  </div>
 </body>
