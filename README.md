@@ -16,7 +16,7 @@ The features of the website should contain posts which is acquired by the hacker
 
 ## Entity Relationship Diagram
 
-![ERD](./HackerNews2.0_ERB.png)
+![ERD](./app/assets/images/HackerNews2.0_ERB.png)
 
 ## Gems:
 
