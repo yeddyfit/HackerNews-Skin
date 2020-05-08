@@ -39,35 +39,22 @@
       <div class="login_container">
       <div class="login"> 
     <% if user_signed_in? %>
-        <%= link_to "logout", destroy_user_session_path, method: :delete %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
     <% else %>
-        <%= link_to "login", new_user_session_path %>
+        <%= link_to "Login", new_user_session_path %>
     <% end %>
     </div>
     </div>
-
-      <%# <ul class="navigation">
-      <a><li>Something 1</li><a>
-      <a><li>Something 2</li><a>
-      <a><li>Something 3</li><a> %>
-
-      </ul>
     </div>
   </div>
   
+  <br>
   <% for post in @posts %>
-    <div class = "media">
-      <li class = "links"> <%= post.title%> </li>
-      <li class="links"><a target="_blank" href="<%= post.link %>">  <%= post.link%> </a> </li> 
-      <li class="links"><%= post.date_posted%></li> 
-      <%= link_to "comments", post_path(post.id) %>
-      <%# <%= post.upvotes%>  
-    </div>
+    <ul class= "links">
+      <li class = "link"> <%= post.title%> </li>
+      <li class="link"><a target="_blank" href="<%= post.link %>">  <%= post.link%> </a> </li> 
+      <li class="link"><%= post.date_posted%>      <%= link_to "Comments", post_path(post.id) %></li> 
+      <br>
+    </ul>
   <% end %>  
-</ul>
-
-      </div>
-
-
-  </section>
 </body>

@@ -17,16 +17,17 @@
  }
 
  .header {
-   width: 100%;
+   width: 70%;
+   margin: auto;
    height: 80px;
    display: block;
  }
 
  .inner_header {
-   width: 1000px;
+   width: 70%;
    height: 100%;
    display: block;
-   margin: 0 auto;
+   
  }
 
  .logo_container {
@@ -79,82 +80,22 @@
 .comment_head {
   color: #3282B8;
 }
-//  #title {
-//   color:#3282B8;
-// }
 
-// //  .container-fluid {
-// //   padding: 3% 15%;
-// // }
-
-// //  Navbar 
-
-//  .navbar {
-//   padding: 0 0 4.5rem;
+// .media {
+//   width: 1200px;
+//   padding: 0;
 // }
 
 
-
-// #test {
-//   .navbar-brand {
-//     font-family: "ubuntu";
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     padding: 3% 8%;
-//   }
-// }
-
-// .nav-item {
-//   padding: 0 18px;
-//   color: #3282B8;
-// }
-
-// .nav-link {
-//   font-size: 1.6rem;
-//   font-family: "Montserrat-Light";
-//   color: #3282B8;
-// }
-
-// // Body 
-
-// //  h1 {
-// //    color: #3282B8;
-// //    padding-bottom: 0;
-// //    margin-bottom: 0;
-// //    font-weight: 900;
-// //    font-size:3.5rem;
-// //  }
-
-//  .tomato {
-//     color: #3282B8;
-//       padding-bottom: 100px;
-//       margin-bottom: 0;
-//       font-weight: 900;
-//       font-size:3.5rem;
-//  }
-
-.media {
-  width: 1200px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
+.links {
+  margin: auto;
+  width: 70%
 }
 
-.media {
-  width: 1000px;
-  height: 100%;
+.link {
   display: block;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
+
+  // flex-direction: column;
+  // width: 100%;
+  flex-direction: column;
 }
-
- .links {
-  display: table-cell;
-  vertical-align: middle;
-  padding-bottom: 40px;
-  margin-left: 5px;
-  line-height: 1.5;
-
- }
