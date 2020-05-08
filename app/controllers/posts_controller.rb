@@ -10,14 +10,11 @@ class PostsController < ApplicationController
   end
 
   def createComment
-    @post = Post.find(params["id"])
-    @comment = current_user.comments.create(post_id: @post.id, commentText: comment_params)
-
-    if @listing.errors.any?
-      render "new"
-    else 
-      redirect_to post_path
+    if params[:comment] != ""
+      @post = Post.find(params["id"])
+      @comment = current_user.comments.create(post_id: @post.id, commentText: params[:comment])
     end
+    redirect_to post_path(params["id"])
   end
 
 
