@@ -30,6 +30,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <section id="title">
       <div class="container-fluid">
 
@@ -68,6 +69,34 @@
   </ul>
 
         </div>
+=======
+  <div class="header">
+    <div class="inner_header">
+      <div class="logo_container">
+        <h1>Hacker News 2.0</h1>
+      </div>
+
+      <ul class="navigation">
+      <a><li>Something 1</li><a>
+      <a><li>Something 2</li><a>
+      <a><li>Something 3</li><a>
+
+      </ul>
+    </div>
+  </div>
+  <% for post in @posts %>
+    <div class = "media">
+      <li class = "links"> <%= post.title%> </li>
+      <li class="links"><a target="_blank" href="<%= post.link %>">  <%= post.link%> </a> </li> 
+      <li class="links"><%= post.date_posted%></li> 
+      <%= link_to "comments", post_path(post.id) %>
+      <%# <%= post.upvotes%>  
+    </div>
+  <% end %>  
+</ul>
+
+      </div>
+>>>>>>> caa3dd82a660a58d57ff9c4a8ebddc76c4e61e77
 
 
   </section>
