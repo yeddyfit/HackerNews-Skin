@@ -36,10 +36,18 @@
         <h1>Hacker News 2.0</h1>
       </div>
 
-      <ul class="navigation">
+      <div class="login"> 
+    <% if user_signed_in? %>
+        <%= link_to "logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+        <%= link_to "login", new_user_session_path %>
+    <% end %>
+  </div>
+
+      <%# <ul class="navigation">
       <a><li>Something 1</li><a>
       <a><li>Something 2</li><a>
-      <a><li>Something 3</li><a>
+      <a><li>Something 3</li><a> %>
 
       </ul>
     </div>
