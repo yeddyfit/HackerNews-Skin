@@ -6,58 +6,114 @@
     background-color: #121212;
     color: #3282B8;
     font-family: "Montserrat";
- }
- #title {
-  color:#3282B8;
-}
-
- .container-fluid {
-  padding: 3% 15%;
-}
-
-//  Navbar 
-
- .navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-family: "ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
-  color: #3282B8;
-}
-
-.nav-item {
-  padding-bottom: 20px;
-  color: #3282B8;
-}
-
-.nav-link {
-  font-size: 1.6rem;
-  font-family: "Montserrat-Light";
-  color: #3282B8;
-  padding-bottom: 150px;
-}
-
-// Body 
-
-//  h1 {
-//    color: #3282B8;
-//    padding-bottom: 0;
-//    margin-bottom: 0;
-//    font-weight: 900;
-//    font-size:3.5rem;
-//  }
-
- .tomato {
-    color: #3282B8;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      font-weight: 900;
-      font-size:3.5rem;
+    margin: 0;
+    padding: 0;
+   text-decoration: none; 
  }
 
-//  li {
-//    text-align: center;
+ .header {
+   width: 100%;
+   height: 80px;
+   display: block;
+ }
+
+ .inner_header {
+   width: 1000px;
+   height: 100%;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .logo_container {
+   height: 100%;
+   display: table;
+   float: left;
+ }
+
+.logo_container h1 {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation a li {
+  display: table-cell;
+  height:100%;
+  vertical-align: middle;
+  font-size: 16px;
+}
+//  #title {
+//   color:#3282B8;
+// }
+
+// //  .container-fluid {
+// //   padding: 3% 15%;
+// // }
+
+// //  Navbar 
+
+//  .navbar {
+//   padding: 0 0 4.5rem;
+// }
+
+
+
+// #test {
+//   .navbar-brand {
+//     font-family: "ubuntu";
+//     font-size: 2.5rem;
+//     font-weight: bold;
+//     padding: 3% 8%;
+//   }
+// }
+
+// .nav-item {
+//   padding: 0 18px;
+//   color: #3282B8;
+// }
+
+// .nav-link {
+//   font-size: 1.6rem;
+//   font-family: "Montserrat-Light";
+//   color: #3282B8;
+// }
+
+// // Body 
+
+// //  h1 {
+// //    color: #3282B8;
+// //    padding-bottom: 0;
+// //    margin-bottom: 0;
+// //    font-weight: 900;
+// //    font-size:3.5rem;
+// //  }
+
+//  .tomato {
+//     color: #3282B8;
+//       padding-bottom: 100px;
+//       margin-bottom: 0;
+//       font-weight: 900;
+//       font-size:3.5rem;
 //  }
+
+ .links {
+   text-align: center;
+   padding-bottom: 20px;
+   margin-left: 10px;
+ }
