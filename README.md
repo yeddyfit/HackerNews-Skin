@@ -4,7 +4,7 @@
 
 ### Github Repositories: https://github.com/yeddyfit/railsHackathon 
 
-### Website: 
+### Website: https://hackernews2point0.herokuapp.com/
 
 ## Purpose
 
