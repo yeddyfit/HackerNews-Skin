@@ -30,46 +30,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-  <section id="title">
-      <div class="container-fluid">
-
-        <nav class="navbar navbar-expand-lg">
-        <h1 class="tomato">HackerNews 2.0</h1>
-          <%# <a class="navbar-brand" href="">Hacker News 2.0</a> %>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="">Something 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Something 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Something 3</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-    <ul>
-    
-    <% for post in @posts %>
-      <div class = "media">
-        <li class = "links"> <%= post.title%> </li>
-        <li class="links"><a target="_blank" href="<%= post.link %>">  <%= post.link%> </a> </li> 
-        <li class="links"><%= post.date_posted%></li> 
-        <%= link_to "comments", post_path(post.id) %>
-        <%# <%= post.upvotes%>  
-      </div>
-    <% end %>  
-  </ul>
-
-        </div>
-=======
   <div class="header">
     <div class="inner_header">
       <div class="logo_container">
@@ -96,7 +56,6 @@
 </ul>
 
       </div>
->>>>>>> caa3dd82a660a58d57ff9c4a8ebddc76c4e61e77
 
 
   </section>
