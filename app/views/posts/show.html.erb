@@ -1,35 +1,36 @@
-<h1 class="comment_head"> <%= @post.title%></h1>
-<a target="_blank" href="<%= @post.link %>">  <%= @post.link%> </a>
-<br>
+<div class="cont">
+    <h1 class="comment_head"> <%= @post.title%></h1>
+    <a target="_blank" href="<%= @post.link %>">  <%= @post.link%> </a>
+    <br>
 
-<div class="login"> 
-<%= link_to "Home", root_path %>
+    <div class="login"> 
+    <%= link_to "Home", root_path %>
+        <% if user_signed_in? %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+            <%= link_to "Login", new_user_session_path %>
+        <% end %>
+    </div>
+    <br>
+
     <% if user_signed_in? %>
-        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-        <%= link_to "Login", new_user_session_path %>
+        <%= form_with(model: @comment, local: true) do |form| %>
+            <div class="title-field">
+                <%= form.label :comment %>
+                <br>
+                <%= form.text_area :comment %>
+            </div>
+            
+            <div>
+                <%= form.submit "Submit"%>
+            </div>
+        <% end %>
     <% end %>
+
+    <br>
+    <div class="comments">
+        <% for comment in @post.comments%>
+            <li><%= comment.user.email %>: <%= comment.commentText %></li>
+        <% end %>
+    </div>
 </div>
-<br>
-
-<% if user_signed_in? %>
-    <%= form_with(model: @comment, local: true) do |form| %>
-        <div class="title-field">
-            <%= form.label :comment %>
-            <br>
-            <%= form.text_area :comment %>
-        </div>
-        
-        <div>
-            <%= form.submit "Submit"%>
-        </div>
-    <% end %>
-<% end %>
-
-<br>
-<div class="comments">
-    <% for comment in @post.comments%>
-        <li><%= comment.user.email %>: <%= comment.commentText %></li>
-    <% end %>
-</div>
-
