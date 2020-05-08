@@ -1,17 +1,21 @@
 <h1> <%= @post.title%></h1>
 
-<%# link to direct us back home %>
+<%= link_to "home", root_path %>
 
 
-<%= form_with(model: @post, local: true) do |form| %>
+<%= form_with(model: @comment, local: true) do |form| %>
     <div class="title-field">
         <%= form.label :comment %>
         <%= form.text_area :comment %>
     </div>
-
     <div>
-    <%= form.submit %>
-    <%= link_to "home", root_path %>
-</div>
-
+        <%= form.submit "post"%>
+    </div>
 <% end %>
+
+<br>
+<div class="comments">
+    <% for comment in @post.comments%>
+        <li><%= comment.user.email %>: <%= comment.commentText %></li>
+    <% end %>
+</div>
