@@ -1,4 +1,4 @@
-# HACKER NEWS 2.0/HACKERTHON
+# HACKER NEWS 2.0/HACKATHON
 
 ### By: Jacob Colyvan, Ashley Bridges, Jeremy Wu
 
@@ -8,7 +8,7 @@
 
 ## Purpose
 
-The purpose of this project, is to test our abillty to create a Web App in a hackerthon with our recently developed Ruby on Rails skills. The team decided to recreate the website Hacker News (https://news.ycombinator.com/news) and make it more aesthetically pleasing, as the website current design/colour scheme was not great.  
+The purpose of this project, is to test our abillty to create a Web App in a hackathon with our recently developed Ruby on Rails skills. The team decided to recreate the website Hacker News (https://news.ycombinator.com/news) and make it more aesthetically pleasing, as the website current design/colour scheme was not great. It essentially makes call to the HackerNews API, and bundles it in a better looking skin.
 
 ## Features
 
